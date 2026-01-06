@@ -269,7 +269,7 @@ h3.reveal.show {
 }
 
 .item {
-    flex: 0 0 85%;
+    flex: 0 0 95%;
     padding: 1rem;
     background: hsl(212, 100%, 93%);
     margin-right: 1rem;
