@@ -92,11 +92,16 @@ function main() {
     function startChat(service) {
         const phone = "2349152680996";
 
+        const mess = `Hello Destiny, I have a question.`
+
         const message = service
             ? `Hello Destiny, I'm interested in a website project and would love to discuss your ${service} service.`
-            : `Hello Destiny, I'm interested in a website projecct and would love to discuss your services `;
+            : `Hello Destiny, I'm interested in a website project and would love to discuss your services `;
         
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+
+        const ur = `https://wa.me/${phone}?text=${encodeURIComponent(mess)}`;
         window.open(url, "_blank");
     }
 
@@ -107,6 +112,12 @@ function main() {
             startChat(service);
         });
     });
+
+    document.querySelector(".WhatsApp").addEventListener("click", function (e) {
+        e.preventDefault();
+        const service = mess;
+        startChat(service);
+    })
 
 }
 main();
