@@ -93,8 +93,7 @@ function main() {
         const phone = "2349152680996";
 
         const message = service
-            ? `Hello Destiny, I'm interested in a website project and would love to discuss your
-                ${service} service.`
+            ? `Hello Destiny, I'm interested in a website project and would love to discuss your ${service} service.`
             : `Hello Destiny, I'm interested in a website projecct and would love to discuss your services `;
         
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
