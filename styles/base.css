@@ -93,7 +93,7 @@ body {
 }
 
 .hero .container {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
@@ -102,7 +102,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     letter-spacing: -2px;
     line-height: 1.1;
@@ -131,6 +131,10 @@ p {
     line-height: 1.5;
     padding-bottom: 2rem;
     color: hsl(240, 3%, 11%);
+}
+
+.hero p {
+    font-weight: 500;
 }
 
 img {
