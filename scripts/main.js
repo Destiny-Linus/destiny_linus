@@ -8,6 +8,7 @@ function main() {
 
     year = document.querySelector("#date").textContent = new Date().getFullYear();
 
+
     ham.addEventListener("click", ()=> {
         navs.classList.add("show");
         ham.classList.add("show");
@@ -44,6 +45,12 @@ function main() {
                 }
             }
         })
+
+        if (window.scrollY > 50) {
+            nav.classList.add("shrink");
+        } else {
+            nav.classList.remove("shrink");
+        }
     })
 
     container = document.querySelector(".parent");
