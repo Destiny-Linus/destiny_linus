@@ -390,7 +390,7 @@ h3.reveal.show {
     animation: slideLeft 1s ease;
 }
 
-.fourth img.reveal.show {
+.fourth img.reveal.show, .sixth img.reveal.show {
     animation: scale 1s ease;
 }
 
