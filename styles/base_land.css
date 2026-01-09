@@ -25,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    transition: transform 0.3s ease;
 }
 
 .navigation.shrink {
@@ -39,13 +40,9 @@
 }
 
 .navigation.shrink .container {
-    padding: 0.75rem 1rem;
+    transform: scale(0.75);
 }
 
-.navigation.shrink img {
-    width: 2.5rem;
-    height: 2.5rem;
-}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
