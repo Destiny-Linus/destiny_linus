@@ -292,17 +292,14 @@ footer.show,
    background-color: hsl(0, 0%, 100%);
 }
 
-.website {
+.landng, .website {
     background-color: hsl(240, 6%, 88%);
 }
 
 .redesign {
-    background-color: hsl(240, 6%, 86%);
+    background-color: hsl(240, 6%, 88%);
 }
 
-.landing {
-    background-color: hsl(240, 6%, 90%);
-}
 
 section.reveal.show {
     animation: slideUp 1s ease;
