@@ -10,12 +10,12 @@ function main() {
 
 
     ham.addEventListener("click", ()=> {
-        navs.classList.add("show");
-        ham.classList.add("show");
-        nav.classList.add("show");
-        hero.classList.add("show");
-        secs.classList.add("show");
-        foot.classList.add("show");
+        navs.classList.toggle("show");
+        ham.classList.toggle("show");
+        nav.classList.toggle("show");
+        hero.classList.toggle("show");
+        secs.classList.toggle("show");
+        foot.classList.toggle("show");
     })
 
     const goes = document.querySelectorAll(".go")

@@ -30,16 +30,16 @@
     }
 
     h2 {
-        line-height: 1.1;
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+        line-height: 1.2;
     }
+
 
     h3 {
         font-size: 2rem;
     }
     
-    p {
-        font-size: 1.12rem;
-    }
 
     .item {
         flex: 0 0 50%;
@@ -85,6 +85,10 @@
 
    #three {
     grid-area: image;
+   }
+
+   .sixth img {
+        width: 500px;
    }
 
    footer .nav {

@@ -43,7 +43,7 @@ html {
 }
 
 .navigation.shrink .container {
-    transform: scale(0.75);
+    transform: scale(0.95);
 }
 
 
@@ -64,16 +64,16 @@ body {
     content: "\2261";
     display: inline-block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 50px;
     color: hsl(240, 4%, 8%);
-    line-height: 0.4;
+    line-height: 0.3;
 }
 
 .ham.show .icon::before {
     content: "\00D7";
     display: inline-block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 50px;
     color: hsl(240, 4%, 8%);
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .hero .container {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     text-align: center;
 }
 
@@ -113,27 +113,28 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-size: clamp(3rem, 5vw, 6rem);
     font-weight: 800;
     letter-spacing: -2px;
     line-height: 1.1;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    max-width: 20ch;
+    margin-inline: auto;
 }
 
 h2 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 600;
     letter-spacing: -1px;
-    line-height: 1.25;
+    line-height: 1.2;
     padding-bottom: 2rem;
     max-width: 25ch;
 }
 
 
 h3 {
-    font-size: clamp(1.25rem, 2vh, 1.5rem);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 500;
-    letter-spacing: -1px;
     line-height: 1.3;
     padding-bottom: 1rem;
 }
@@ -146,7 +147,7 @@ p {
 
 .hero-description {
     font-weight: 500;
-    font-size: 1.250rem;
+    font-size: 1.125rem;
     max-width: 60ch;
     margin-inline: auto;
     line-height: 1.7;
@@ -169,12 +170,13 @@ p {
     margin-inline: auto;
 }
 
-img {
-    max-width: 100%;
+
+.hero .action {
+    padding: 1rem 0;
 }
 
-.hero .action, .sixth .action {
-    padding: 2rem 0;
+.sixth .action {
+    padding-bottom: 2rem;
 }
 
 .hero .action a, .third a{
@@ -229,28 +231,33 @@ footer.show,
 }
 
 .child {
-    background-color: hsl(230, 4%, 95%);
+    background-color: hsl(240, 6%, 95%);
 }
 
 .child .container {
-    padding: 4rem 2rem;
+    padding: 3.5rem 1.12rem;
     overflow: hidden;
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .service {
-    padding: 4rem 1.5rem; 
+    padding: 3rem 1.15rem; 
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .service div {
-    padding: 2rem 0;
+    padding-bottom: 1rem;
     margin-bottom: 2rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+.service img {
+    max-width: 85%;
+    margin-inline: auto;
 }
 
 .service a {
@@ -276,20 +283,24 @@ footer.show,
    background-color: hsl(0, 0%, 100%);
 }
 
-.landing, .redesign {
-    background-color: hsl(240, 6%, 14%);
+.website {
+    background-color: hsl(0, 0%, 50%);
 }
 
-.landing p, .redesign p {
+.redesign {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.redesign p, .website p {
     color: hsl(0, 0%, 92%);
 }
 
-.landing h3, .redesign h3 {
+.redesign h3, .website h3 {
     color: hsl(0, 0%, 98%);
 }
 
-.website {
-    background-color: hsl(0, 0%, 100%);
+.landing {
+    background-color: hsl(0, 0%, 80%);
 }
 
 section.reveal.show {
@@ -302,7 +313,7 @@ h3.reveal.show {
 }
 
 .second {
-    border-top: none;
+    background-color: hsl(240, 6%, 85%);
 }
 
 .second .container {
@@ -321,7 +332,7 @@ h3.reveal.show {
 
 .item {
     flex: 0 0 95%;
-    padding: 1rem;
+    padding: 1rem 1.15rem;
     background: hsl(212, 100%, 93%);
     margin-right: 1rem;
     scroll-snap-align: start;
@@ -394,9 +405,9 @@ h3.reveal.show {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.15rem;
     border-radius: 50%;
     background-color: hsl(45, 90%, 55%);
 }
@@ -418,8 +429,12 @@ h3.reveal.show {
     text-align: center;
 }
 
-.third, .fifth {
+.third {
     background-color: hsl(212, 100%, 95%);
+}
+
+.fifth {
+    background-color: hsl(212, 100%, 85%);   
 }
 
 .third .action, .fifth .action {
@@ -437,11 +452,15 @@ h3.reveal.show {
 }
 
 .sixth {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 99%);
 }
 
 .sixth .container {
     text-align: center;
+}
+
+.sixth img {
+    max-height: 60%;
 }
 
 footer a {
