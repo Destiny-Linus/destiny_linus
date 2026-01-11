@@ -109,7 +109,7 @@ body {
 
 h1, h2, h3 {
     color: hsl(240, 4%, 8%);
-    font-family: "Poppins";
+    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -145,12 +145,22 @@ p {
     color: hsl(240, 3%, 11%);
 }
 
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.service img, #about img, .sixth img {
+    display: block;
+    margin-inline: auto;
+}
+
 .hero-description {
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 1.12rem;
     max-width: 60ch;
     margin-inline: auto;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 .banner {
@@ -253,11 +263,6 @@ footer.show,
     gap: 1rem;
     justify-content: center;
     align-items: center;
-}
-
-.service img {
-    max-width: 85%;
-    margin-inline: auto;
 }
 
 .service a {
