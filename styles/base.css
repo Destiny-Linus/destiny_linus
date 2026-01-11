@@ -9,7 +9,7 @@ html {
 }
 
 .container {
-    max-width: 480px;
+    max-width: 400px;
     margin-inline: auto;
 }
 
@@ -109,11 +109,11 @@ body {
 
 h1, h2, h3 {
     color: hsl(240, 4%, 8%);
-    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: 4rem;
     font-weight: 800;
     letter-spacing: -2px;
     line-height: 1.1;
@@ -155,8 +155,11 @@ img {
     margin-inline: auto;
 }
 
+.service .description {
+    padding-bottom: 1.125rem;
+}
+
 .hero-description {
-    font-weight: 500;
     font-size: 1.12rem;
     max-width: 60ch;
     margin-inline: auto;
@@ -247,20 +250,21 @@ footer.show,
 .child .container {
     padding: 3.5rem 1.12rem;
     overflow: hidden;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .service {
     padding: 3rem 1.15rem; 
+    padding-bottom: 0;
     text-align: center;
-    margin: 2rem 0;
+    margin-bottom: 1rem;
 }
 
 .service div {
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: .6rem;
     justify-content: center;
     align-items: center;
 }
@@ -289,23 +293,15 @@ footer.show,
 }
 
 .website {
-    background-color: hsl(0, 0%, 50%);
+    background-color: hsl(240, 6%, 88%);
 }
 
 .redesign {
-    background-color: hsl(0, 0%, 20%);
-}
-
-.redesign p, .website p {
-    color: hsl(0, 0%, 92%);
-}
-
-.redesign h3, .website h3 {
-    color: hsl(0, 0%, 98%);
+    background-color: hsl(240, 6%, 86%);
 }
 
 .landing {
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(240, 6%, 90%);
 }
 
 section.reveal.show {
@@ -318,7 +314,7 @@ h3.reveal.show {
 }
 
 .second {
-    background-color: hsl(240, 6%, 85%);
+    background-color: hsl(240, 6%, 92%);
 }
 
 .second .container {
@@ -439,7 +435,7 @@ h3.reveal.show {
 }
 
 .fifth {
-    background-color: hsl(212, 100%, 85%);   
+    background-color: hsl(212, 100%, 94%);   
 }
 
 .third .action, .fifth .action {
